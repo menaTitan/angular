@@ -5,11 +5,14 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-xs-6">
+      <div class="col-xs-4">
        <app-odd *ngFor="let oddNumber of oddNumbers" [number]="oddNumber"></app-odd>
       </div>
-      <div class="col-xs-6">
+      <div class="col-xs-4">
         <app-even *ngFor="let evenNumber of evenNumbers" [number]="evenNumber"></app-even>
+       </div>
+       <div class="col-xs-4">
+        <app-prime *ngFor="let primeNumber of primeNumbers" [number]="primeNumber"></app-prime>
        </div>
     </div>
 </div>
